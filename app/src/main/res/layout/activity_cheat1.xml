@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#432123"
+    android:backgroundTint="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CheatActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F3E3E3"
+        android:text="@string/warning_textview"
+        android:textColor="#050505"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/cheat_answer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:textColor="#543223"
+        android:textSize="20sp"
+        tools:text="@string/false_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_answer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:background="#FFEB3B"
+
+
+        android:scrollbarSize="22dp"
+        android:text="@string/showAnswer_btn"
+        android:textColor="#000000"
+        android:textSize="34dp" />
+
+</LinearLayout>
+
+

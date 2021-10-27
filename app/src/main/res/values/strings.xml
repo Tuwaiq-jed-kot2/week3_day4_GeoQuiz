@@ -1,11 +1,21 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
+    <string name="app_name">QUESTIONS</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="true_btn">True</string>
+    <string name="false_btn">False</string>
+    <string name="next_btn">Next</string>
+    <string name="cheat_btn">Cheat</string>
+    <string name="showAnswer_btn">Show Answer</string>
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Incorrect</string>
+    <string name="cheater_toast">how dare you cheater!!!!!!</string>
+    <string name="warning_textview">are you sure!!!!!</string>
+
+    <string name="Q1">Is Saudi Arabia located in the continent of Asia?  </string>
+    <string name="Q2">Is Riyadh the capital of Saudi Arabia? </string>
+    <string name="Q3"> Is Australia the smallest continent?</string>
+    <string name="Q4"> Is New York the capital of America?
+ </string>
 
 
 </resources>

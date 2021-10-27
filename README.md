@@ -1,5 +1,3 @@
-# week3_day3_GeoQuiz(OnSaveInstanceState,viewModel)
-Part1: 
-Use the onSaveInstanceState to save the current question.  
-Part2: 
-Use the view model to show the name of the instructor that wrote the question (hint add text view).  
+# week3_day4_GeoQuiz
+Use Intent to send also the question's text and show question's text 
+with the questions answer on the CheatActivity
