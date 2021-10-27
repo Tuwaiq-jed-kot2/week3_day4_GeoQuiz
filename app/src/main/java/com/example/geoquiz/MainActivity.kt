@@ -1,29 +1,95 @@
-package com.example.geoquiz
+package com.example.easyquize
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Switch
+import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
+import com.example.geoquiz.CheatActivity2
+import com.example.geoquiz.R
 
+const val  Index_QUESTAION = "0"
+const val INDEX_ANSWER="0"
+const val REQUEST_CODE =0
 class MainActivity : AppCompatActivity() {
 
-   private lateinit var falseButton:Button
-   private lateinit var trueButton:Button
+    private lateinit var trueBtn:Button
+    private lateinit var falseBtn:Button
+    private lateinit var nextBtn:Button
+    private lateinit var cheatBtn:Switch
+    private lateinit var questionTV:TextView
+
+
+
+
+    private val quizViewModel by lazy { ViewModelProvider(this).get(QuizViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        falseButton = findViewById(R.id.false_button)
-        trueButton = findViewById(R.id.true_button)
+        init_view()
+        listeners()
+        updateQuestion()
 
-        falseButton.setOnClickListener {
-            Toast.makeText(this,R.string.incorrect_toast,Toast.LENGTH_LONG).show()
+        cheatBtn.setOnClickListener {
+            toCheat()
         }
 
-        trueButton.setOnClickListener {
-            Toast.makeText(this,R.string.correct_toast,Toast.LENGTH_LONG).show()
+    }
+
+    private fun toCheat () {
+        val intent=Intent(this,CheatActivity2::class.java)
+        intent.putExtra(Index_QUESTAION,quizViewModel.currentQuestion)
+        intent.putExtra(INDEX_ANSWER , quizViewModel.currentAnswer)
+        startActivityForResult(intent, REQUEST_CODE)
+    }
+
+    private fun listeners() {
+        trueBtn.setOnClickListener {
+            checkAnswer(true)
         }
 
+        falseBtn.setOnClickListener {
+            checkAnswer(false)
+        }
+
+        nextBtn.setOnClickListener {
+            quizViewModel.nextQuestion()
+            updateQuestion()
+        }
+
+        cheatBtn.setOnClickListener {
+            val intent = Intent(this, CheatActivity2::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun updateQuestion(){
+        val questionId = quizViewModel.currentQuestion
+        questionTV.setText(questionId)
+    }
+
+    private fun checkAnswer(userAnswer:Boolean){
+        val correctAnswer = quizViewModel.currentAnswer
+
+        val theMsg = when (correctAnswer) {
+            userAnswer -> R.string.correct_toast
+            else -> R.string.incorrect_toast
+        }
+
+        Toast.makeText(this , theMsg , Toast.LENGTH_LONG).show()
+
+    }
+
+    private fun init_view() {
+        trueBtn = findViewById(R.id.true_btn)
+        falseBtn = findViewById(R.id.false_btn)
+        nextBtn = findViewById(R.id.next_btn)
+        cheatBtn = findViewById(R.id.cheat_btn)
+        questionTV = findViewById(R.id.question_tv)
     }
 }

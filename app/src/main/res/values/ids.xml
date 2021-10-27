@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="return_btn" type="id" />
+    <item name="true_btn" type="id" />
+    <item name="false_btn" type="id" />
+    <item name="next_btn" type="id" />
+    <item name="cheat_btn" type="id" />
+    <item name="question_tv" type="id" />
+</resources>
