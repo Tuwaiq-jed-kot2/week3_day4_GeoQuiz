@@ -52,6 +52,16 @@
             android:layout_weight="1"
             android:background="#F44336"
             android:text="@string/falseButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cheatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#3F51B5"
+            android:text="@string/cheatButton"
+            android:textColor="#FFFFFF"
+            app:rippleColor="#5E5C5C" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,24 +87,13 @@
             android:background="#3F51B5"
             app:srcCompat="@drawable/arrow_right"
             tools:ignore="SpeakableTextPresentCheck" />
-
     </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cheatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#3F51B5"
-        android:text="@string/cheatButton"
-        android:textColor="#FFFFFF"
-        app:rippleColor="#5E5C5C" />
 
     <TextView
         android:id="@+id/InstrucNametextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/instructorName" />
 
