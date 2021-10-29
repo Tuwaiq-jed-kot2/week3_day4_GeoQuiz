@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFE6E2D7">
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/frank_ruhl_libre_medium"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:textColor="#41208C"
+        android:textSize="30sp"
+        android:text="@string/appName" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:progressTint="#A79DCB"
+        android:max="3"
+        android:min="1"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/question_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:textColor="#99E14716"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/true_button"
+            android:textColor="#99000000" />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/false_button"
+            android:backgroundTint="@color/white"
+            android:textColor="#99000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_baseline_chevron_left_24"
+            android:backgroundTint="#A79DCB" />
+
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background = "@drawable/ic_baseline_chevron_right_24"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#99000000"
+        android:text="@string/cheat_button"/>
+
+        <ImageButton
+            android:id="@+id/hint_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#99E14716"
+            android:background = "@drawable/ic_baseline_highlight_24" />
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="105dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/frank_ruhl_libre_medium"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:textColor="#FFA79DCB"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
