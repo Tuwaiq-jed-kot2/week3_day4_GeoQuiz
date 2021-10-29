@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#DDE8E8E8"
+    android:backgroundTintMode="add"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CheatActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FEFEFE"
+        android:fontFamily="@font/numans"
+        android:padding="24dp"
+        android:text="@string/warning_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#780202"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cheatQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FEFEFE"
+        android:fontFamily="@font/numans"
+        android:padding="24dp"
+        tools:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0A0A0A"
+        android:textSize="38sp"
+        android:textStyle="bold" />/>
+
+    <TextView
+        android:id="@+id/cheat_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/numans"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="TextView" />
+
+    <Button
+        android:id="@+id/show_answerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:backgroundTint="#0B0B0B"
+        android:fontFamily="@font/numans"
+        android:text="@string/show_answer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationY="20dp" />
+
+</LinearLayout>

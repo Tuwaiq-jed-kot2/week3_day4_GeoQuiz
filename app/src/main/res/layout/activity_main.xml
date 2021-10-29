@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#DDE8E8E8"
+    android:backgroundTintMode="add"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00FEFEFE"
+        android:fontFamily="@font/numans"
         android:padding="24dp"
-        android:text="@string/question_text"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0A0A0A"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="@string/first_q" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,17 +31,61 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/true_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:backgroundTint="#0B0B0B"
+            android:fontFamily="@font/numans"
+            android:text="@string/true_button"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/false_button"
+            android:id="@+id/false_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:backgroundTint="#070707"
+            android:fontFamily="@font/numans"
+            android:text="@string/false_button"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cheat_btn"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#780202"
+            android:fontFamily="@font/numans"
+            android:includeFontPadding="false"
+            android:text="@string/cheat_button"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="4dp"
+        android:backgroundTint="#0B0B0B"
+        android:fontFamily="@font/numans"
+        android:text="@string/next_button"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationX="5dp"
+        android:translationY="200dp" />
+
+
 </LinearLayout>
