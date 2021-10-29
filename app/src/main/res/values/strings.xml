@@ -2,10 +2,18 @@
     <string name="app_name">GeoQuiz</string>
 
     <string name="question_text"> the capital of KSA is Hail  </string>
+    <string name="Q1">this is your second time written this code</string>
+    <string name="Q2">android is best OS system</string>
+    <string name="Q3">kotlin is very easy</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct !!</string>
     <string name="incorrect_toast">Incorrect!!</string>
+    <string name="Nexet_btn">Next</string>
+    <string name="Back_btn">Back</string>
+    <string name="Cheat_btn">CHEAT!</string>
+    <string name="Cheater_Msg">you are cheater</string>
+    <string name="Show_btn">Show Answer</string>
 
 
 </resources>
