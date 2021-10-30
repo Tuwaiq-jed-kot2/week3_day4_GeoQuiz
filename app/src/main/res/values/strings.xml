@@ -1,11 +1,43 @@
 <resources>
+
     <string name="app_name">GeoQuiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="next_question">Next</string>
+    <string name="previous_Button">Previous</string>
+
+    <string name="first_question"> The capital of KSA is Riyadh  </string>
+    //true
+    <string name="second_question"> KSA is in Africa </string>
+    // false
+    <string name="third_question"> Asia is the worlds smallest continent </string>
+    // false
+    <string name="fourth_question"> Brazil is the largest country in South America </string>
+    //true
+    <string name="fifth_question"> There are 41 countries in Africa </string>
+    // false
+    <string name="sixth_question"> Vatican is the smallest country in the world </string>
+    // true
+    <string name="seventh_question"> Havana is the capital of Cuba </string>
+    // true
+    <string name="eighth_question"> France  is called "Land of Fire and Ice </string>
+    // false
+    <string name="nine_question"> Each star on the flag of the United States stand for a state </string>
+    // true
+    <string name="tenth_question"> The Sahara Desert extends into how 5 countries </string>
+    <string name="try_again">Do you want to try again?</string>
+    <string name="try_again_btn">try again</string>
+    <string name="score">Score:</string>
+    <string name="out_of_ten">/10</string>
+    <string name="show_answer">Show Answer</string>
+    <string name="remaining_attempts">Remaining Attempts :</string>
+    <string name="cheat_warning">Are You Sure You Want To Cheat?</string>
+    <string name="the_answer_is">The Answer is :</string>
+    <string name="show_answer_btn">Show Answer</string>
+    <string name="cheater">Cheater!</string>
+    // false
 
 
 </resources>

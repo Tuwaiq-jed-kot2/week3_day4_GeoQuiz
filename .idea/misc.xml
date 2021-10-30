@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_right.xml" value="0.152" />
+        <entry key="app/src/main/res/font/cairo_semibold.xml" value="0.2764102564102564" />
+        <entry key="app/src/main/res/font/font.xml" value="0.2753846153846154" />
+        <entry key="app/src/main/res/layout/activity_cheat.xml" value="0.25052083333333336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

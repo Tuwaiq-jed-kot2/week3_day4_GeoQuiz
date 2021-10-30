@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_blue"
+    tools:context=".CheatActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_warning"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/light_blue"
+        android:fontFamily="@font/cairo_semibold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/cheated_q_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/first_question"
+        android:textColor="@color/white"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_answer_is"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/cheat_answer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="True"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cairo_semibold"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cheat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_answer_btn"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/light_blue"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/dark_blue" />
+
+</LinearLayout>
