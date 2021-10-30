@@ -4,37 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DDCFCF"
+    android:backgroundTint="#DCCECE"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/first_question"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:text="@string/question_text"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:gravity="center"
+        android:paddingStart="10sp"
+        android:textColor="#131313"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="copyrights depreciate over time" />
+
+    <TextView
+        android:id="@+id/custom_T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="nice quiz" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="#AAA7A7"
+        android:gravity="center">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/false_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/true_button" />
+
+            android:backgroundTint="#807F7F"
+            android:gravity="center"
+            android:text="False" />
 
         <Button
-            android:id="@+id/false_button"
+            android:id="@+id/true_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/false_button" />
+
+            android:backgroundTint="#807F7F"
+            android:gravity="center"
+            android:text="True" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="do you want ti cheat"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Answer"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#BDBCBC"
+            android:gravity="center"
+            android:text="@string/button" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nixt_btn"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#807F7F"
+
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/pre_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+
+        android:backgroundTint="#807F7F"
+
+        android:text="previous" />
+
+    <TextView
+        android:id="@+id/instructor_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        tools:text="writter by rwan"
+        android:textColor="#1C1C1C"
+        android:textSize="16sp" />
+
 </LinearLayout>

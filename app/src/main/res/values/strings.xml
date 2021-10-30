@@ -6,6 +6,16 @@
     <string name="false_button">False</string>
     <string name="correct_toast">Correct !!</string>
     <string name="incorrect_toast">Incorrect!!</string>
+    <string name="next">next</string>
+    <string name="button">button</string>
+    <string name="previous_button" />
+    <string name="show_me">show me</string>
+    <string name="answer">answer</string>
+    <string name="quistion">question</string>
+    <string name="cheater_is_wrog">cheater is wrong</string>
+    <string name="Q1" />
+    <string name="Q2" />
+    <string name="Q3" />
 
 
 </resources>
