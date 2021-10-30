@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/week3_day4_GeoQuiz/app/src/main/res/layout/activity_cheat.xml" value="0.1796875" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/week3_day4_GeoQuiz/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/week3_day4_GeoQuiz/app/src/main/res/layout/activity_mainLand.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
