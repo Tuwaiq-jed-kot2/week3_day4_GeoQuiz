@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nextButton" type="id" />
+    <item name="question_Tv" type="id" />
+    <item name="BACK" type="id" />
+    <item name="cheat_button" type="id" />
+    <item name="true_button" type="id" />
+    <item name="false_button" type="id" />
+</resources>
