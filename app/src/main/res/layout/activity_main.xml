@@ -4,37 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/question_tv"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:text="@string/question_text"
+        android:background="#EBF2F3"
+        android:backgroundTint="#CFC0EC"
+        android:paddingStart="35sp"
+        android:paddingEnd="35sp"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:text="@string/Q1" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/true_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:layout_margin="10sp"
+            android:backgroundTint="#695C80"
+            android:text="@string/true_btn"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/false_button"
+            android:id="@+id/false_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:layout_margin="10sp"
+            android:backgroundTint="#695C80"
+            android:text="@string/false_btn"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/cheat_btn"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#695C80"
+        android:text="@string/cheat_btn"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="#695C80"
+        android:text="@string/next_btn"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
 </LinearLayout>

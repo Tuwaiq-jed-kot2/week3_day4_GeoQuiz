@@ -1,11 +1,21 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
+    <string name="app_name">Easyquiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="true_btn">True</string>
+    <string name="false_btn">False</string>
+    <string name="next_btn">Next</string>
+    <string name="cheat_btn">Cheat</string>
+    <string name="showAnswer_btn">Show Answer</string>
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Incorrect</string>
+    <string name="cheater_toast">how dare you cheater</string>
+    <string name="warning_textview">Are you sure?</string>
+
+
+    <string name="Q1">Do you love Android Studio</string>
+    <string name="Q2">Is Saudi Arabia in Africa</string>
+    <string name="Q3">your name is Asrar</string>
+    <string name="Q4">Is Dubi in Saudi Arabia? </string>
 
 
 </resources>
