@@ -21,6 +21,7 @@ class cheat_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cheat)
         init1()
+        val Intant = Intent(this, MainActivity::class.java)
 
         answerIsTOrF = intent.getBooleanExtra(ExtraAnsweerOrNOT, true)
 
