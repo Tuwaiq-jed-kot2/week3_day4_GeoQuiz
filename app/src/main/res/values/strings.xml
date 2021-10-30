@@ -1,11 +1,38 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
-
-    <string name="question_text"> the capital of KSA is Hail  </string>
+    <string name="app_name">NewGeoQuiz</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="next_button">Next</string>
+    <string name="pre_button">pre</string>
+    <string name="showAnswer_button">Show Answer</string>
+    <string name="cheat_button">Cheat</string>
+
+
+    <string name="correct_toast">Correct :)</string>
+    <string name="incorrect_toast">Incorrect ;(</string>
+    <string name="cheater_toast">You Are A cheater -_-</string>
+    <string name="waring_textView">Are you sure you want to cheat?</string>
+
+
+    <string name="Q1">The capital of saudi arabia is JED</string>
+    <string name="Q2">there are less then 15M people in saudi arabia</string>
+    <string name="Q3">there are more then 25M people in saudi arabia</string>
+    <string name="Q4">Quinn Elsbeth life in south of Saudi Arabia </string>
+    <string name="Q5">Quinn Elsbeth life in Kingdom of Britain</string>
+    <string name="Q6">FAISALT1000 IS the best one</string>
+
+
+    <string name="W1">Write By Me</string>
+    <string name="W2">Write By Me also</string>
+    <string name="W3">Write By Me</string>
+    <string name="W4">Write By Me also</string>
+
+
+
+    <string name="end_Toast">sorry, we will add more question very soon....</string>
+    <string name="start_Toast">this is the first question</string>
+
+
 
 
 </resources>
