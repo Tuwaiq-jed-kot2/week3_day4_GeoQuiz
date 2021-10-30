@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+
     android:gravity="center"
     android:orientation="vertical"
+    app:layout_marginBaseline="@dimen/cardview_compat_inset_shadow"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/qestios_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/question_text"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="20sp"
+        tools:text="@string/first_question" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,17 +26,79 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/falseButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:text="@string/false_button"
+            android:textColor="#050E42"
+            android:textColorHighlight="#EFD9D9"
+            android:textSize="24sp"
+            app:backgroundTint="#A15670"
+             />
 
         <Button
-            android:id="@+id/false_button"
+            android:id="@+id/trueButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:text="Tour"
+            android:textColor="#050E42"
+            android:textSize="24sp"
+            app:backgroundTint="#A15670" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextButton"
+        android:textColor="#050E42"
+        android:textSize="24sp"
+        app:backgroundTint="#A15670"
+        app:icon="@drawable/image1"
+        app:iconPadding="10dp" />
+
+    <Button
+        android:id="@+id/back_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="20dp"
+        android:text="@string/backButton"
+        android:textColor="#050E42"
+        android:textSize="24sp"
+        app:backgroundTint="#A15670"
+        app:icon="@drawable/image2"/>
+
+
+    <TextView
+        android:id="@+id/con_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_Button"
+        android:textColor="#050E42"
+        android:textSize="24sp"
+        app:backgroundTint="#A15670"
+        app:iconPadding="10dp" />
+
+    <TextView
+
+        android:id="@+id/question_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:textSize="30sp" />
+
+
 </LinearLayout>
