@@ -1,24 +1,27 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
 
-    <string name="Q1"> the capital of KSA is Hail  </string>
-    <string name="Q2"> An owl can turn it’s head 360 degrees.  </string>
-    <string name="Q3"> Thomas Edison proposed to his future wife in Morse Code. </string>
+<string name="app_name">Geoquiz</string>
+<string name="first_question">the capital of KSA is Hail</string>
+<string name="second_question">KSA is in Africa </string>
+<string name="third_question"> your name is Ahmed</string>
+<string name="forth_question">your in Jeddah</string>
+<string name="fifth_question">your a boy</string>
 
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="next_button">next</string>
-    <string name="back_button">back</string>
-    <string name="cheat_button">help</string>
-    <string name="showA_button">see</string>
 
-    <string name="warrning"> you will be a cheater</string>
-    <string name="myName">Yasmin Basim</string>
+    <string name="MYNAME">Yasmin</string>
 
-    <string name="correct_toast">Correct!!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
-    <string name="CheatA_toast">your cheater!!!</string>
+<string name="true_Button">true</string>
+<string name="fales_Button">false</string>
+<string name="correct_toast">correct!!</string>
+<string name="incorrect_toast">incorrect!!</string>
+<string name="next">next</string>
+<string name="back">back</string>
 
+<string name="Warninng_Button">are you sur?</string>
+
+<string name="cheat_Button">cheat</string>
+<string name="showAnswer_Button">show</string>
+<string name="judjment_toast">you cheat</string>
 
 
 </resources>

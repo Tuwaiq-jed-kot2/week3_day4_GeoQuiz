@@ -2,39 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/answer"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp">
+    android:backgroundTint="#958585"
+    android:paddingTop="20dp"
+    android:paddingEnd="10dp"
+    tools:context="cheat_activity">
 
     <TextView
-        android:id="@+id/warring"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:text="@string/warrning" />
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        android:text="@string/Warninng_Button"
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/showA_button"
+        android:id="@+id/showAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:text="@string/showA_button" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="50"
+        android:backgroundTint="#592727"
+        android:text="@string/showAnswer_Button" />
 
     <TextView
-        android:id="@+id/cheatA_toast"
+        android:id="@+id/answerTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
-
-    <LinearLayout
-        android:id="@+id/answerTextV"
-        android:layout_width="26dp"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:orientation="vertical" />
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="50"
+        android:textColor="#050202"
+        tools:text="TextView" />
 
 </LinearLayout>

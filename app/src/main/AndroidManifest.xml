@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GeoQuiz">
+
         <activity
-            android:name=".question"
-            android:exported="true" />
-        <activity
-            android:name=".cheat_Activity"
+            android:name=".cheat_activity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

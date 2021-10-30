@@ -4,75 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A58E8E"
-    android:backgroundTint="#D3DBE1"
+    android:background="#B86868"
+    android:backgroundTint="#EAC5C5"
+    android:foregroundTint="#D5ADAD"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:outlineAmbientShadowColor="#AC8D8D"
+    android:outlineSpotShadowColor="#BA9292">
 
     <TextView
-        android:id="@+id/QTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AEA2A2"
-        android:padding="24dp"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        tools:text="@string/Q1" />
-
-    <TextView
-        android:id="@+id/myName"
+        android:id="@+id/question_textVeiw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:text="@string/myName"
-        android:textColor="#303133"
-        android:textSize="20sp" />
+        android:background="#000000"
+        android:backgroundTint="#E4E0E1"
+        android:foregroundTint="#FB0C0C"
+        android:padding="24dp"
+        android:textColor="#120101"
+        android:textDirection="locale"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="@string/first_question"
+        app:drawableTint="#CDC0C0" />
+
+    <TextView
+        android:id="@+id/MYNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MYNAME" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:padding="24dp">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/true_Botton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/true_button"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#8C2A4B"
+            android:text="@string/true_Button"
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/false_button"
-            android:layout_width="wrap_content"
+            android:id="@+id/false_Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/false_button"
-            android:textSize="16sp" />
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#8C2A4B"
+            android:foregroundTint="#9E6C6C"
+            android:outlineAmbientShadowColor="#BC8F8F"
+            android:outlineSpotShadowColor="#D5B1B1"
+            android:shadowColor="#372323"
+            android:text="@string/fales_Button"
+            android:textColorHighlight="#F6EDED"
+            android:textColorLink="#F6F2F2"
+            android:textSize="16sp"
+            app:strokeColor="#AC6F6F" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/next_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/next_question"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/next_button" />
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#BD8C8C"
+        android:text="@string/next" />
 
     <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/back_quetion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:text="@string/back_button" />
+        android:backgroundTint="#A88080"
+        android:text="@string/back"
+        android:textColorHighlight="#A37070" />
 
     <Button
-        android:id="@+id/help_button"
+        android:id="@+id/cheat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/help_button" />
+        android:background="#5E7C77"
+        android:backgroundTint="#8C2A4B"
+        android:drawableTint="#BD8E8E"
+        android:foregroundTint="#857272"
+        android:text="cheatt"
+        app:iconTint="#C5B0B0" />
+
 
 </LinearLayout>

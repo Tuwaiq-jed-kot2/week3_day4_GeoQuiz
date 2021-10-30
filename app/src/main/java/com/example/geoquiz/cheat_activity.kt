@@ -4,41 +4,49 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Button
 import android.widget.TextView
 import java.time.Instant
-const val EXTRAcheat="tgtgtgt"
-const val EXTRAanswerORnot="mnmnmn"
+const val extrx_cheater="alpha"
+const val ExtraAnsweerOrNOT="answeraaa"
 
-class Cheat_activity : AppCompatActivity(){
+class cheat_activity : AppCompatActivity() {
     private lateinit var answer:TextView
     private lateinit var showA:Button
-    var isTorF=false
-    var questionR=0
+    private lateinit var cheatButton: Button
+
+    var answerIsTOrF= false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cheat)
-        answer=findViewById(R.id.answerTextV)
-        showA=findViewById(R.id.showA_button)
-        answer=findViewById(R.id.QTv)
+        init1()
 
-        questionR=intent.getIntExtra(Qtocheat,0)
-        isTorF=intent.getBooleanExtra(EXTRAanswerORnot,true)
+        answerIsTOrF = intent.getBooleanExtra(ExtraAnsweerOrNOT, true)
 
-        showA.setOnClickListener{
-            answer.setText(isTorF.toString())
-            answerShowRe()
+        showA.setOnClickListener {
+            answer.setText(answerIsTOrF.toString())
+            setAnswerShowResult()
         }
+
     }
-    fun answerShowRe(){
-        val data =Intent().apply{
-            putExtra(EXTRAcheat,true)
+
+    private fun init1() {
+        answer = findViewById(R.id.answerTextView)
+        showA = findViewById(R.id.showAnswer)
+        cheatButton = findViewById(R.id.cheat_button)
+
+    }
+
+    fun setAnswerShowResult(){
+
+        val data=Intent().apply {
+            putExtra(extrx_cheater,true)
         }
         setResult(Activity.RESULT_OK)
+
     }
 
 }
-
 
 
