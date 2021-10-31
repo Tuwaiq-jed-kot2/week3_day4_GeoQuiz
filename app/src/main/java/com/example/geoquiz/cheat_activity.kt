@@ -16,12 +16,14 @@ class cheat_activity : AppCompatActivity() {
     private lateinit var cheatButton: Button
 
     var answerIsTOrF= false
+    var Equestonn=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cheat)
         init1()
-        val Intant = Intent(this, MainActivity::class.java)
+
+        Equestonn=intent.getIntExtra(Qtocheat,0)
 
         answerIsTOrF = intent.getBooleanExtra(ExtraAnsweerOrNOT, true)
 
