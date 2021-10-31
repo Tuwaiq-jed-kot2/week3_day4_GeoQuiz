@@ -1,11 +1,22 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
-
-    <string name="question_text"> the capital of KSA is Hail  </string>
     <string name="true_button">True</string>
+    <string name="cheat_button" > Cheat</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+    <string name="correct_toast">Correct!! &#128077;</string>
+    <string name="incorrect_toast">Incorrect!! &#128078; </string>
+    <string name="warning_text"> Are OK with that !! &#128574; </string>
+    <string name="judgemental_massage_toast"> Shame on you Cheater !! &#128574; </string>
+    <string name="answer_text">Answer!!</string>
+    <string name="show_answer_button">Show_answer_button!!</string>
+    <string name="Q1">The first country in the world to use postcard was US</string>
+    <string name="Q2">A male Canary tend to have a better singing voice than a female </string>
+    <string name="Q3">Dogs have an appendix</string>
+    <string name="Q4">Bill gates the founder of amazon</string>
+    <string name="Q5">Mice have more bones than human</string>
+
 
 
 </resources>
