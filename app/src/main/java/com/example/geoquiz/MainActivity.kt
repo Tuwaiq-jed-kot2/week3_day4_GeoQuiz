@@ -14,6 +14,7 @@ import com.example.geoquiz.R
 const val  Index_QUESTAION = "0"
 const val INDEX_ANSWER="0"
 const val REQUEST_CODE =0
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var trueBtn:Button

@@ -18,6 +18,7 @@ private  lateinit var warningText : TextView
 private lateinit var textView3 : TextView
 private lateinit var cheatBtn : Button
      var answerIsTrueOrFalse =false
+var questionIsTrueOrFalse = false
 
 class CheatActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,11 +28,8 @@ class CheatActivity2 : AppCompatActivity() {
          warningText=findViewById(R.id.warning_textview)
          cheatBtn= findViewById(R.id.showAnswer_btn)
 
-        answerIsTrueOrFalse =intent.getBooleanExtra(Index_QUESTAION,false)
-        cheatBtn.setOnClickListener {
-
-        }
-
+        answerIsTrueOrFalse =intent.getBooleanExtra(INDEX_ANSWER,false)
+        questionIsTrueOrFalse =intent.getBooleanExtra(Index_QUESTAION,false)
 
             val toast = Toast.makeText(this, "  No , you are CHEATER :( !", Toast.LENGTH_LONG)
             toast.show()
