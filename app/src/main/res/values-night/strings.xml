@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">geoquiz</string>
+    <string name="first_question">the capital of KSA is hail </string>
+    <string name="second_question">Ksa is in africa</string>
+    <string name="third_question">your name is ahmed</string>
+
+    <string name="question">kjl;</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="correct_toast">correct</string>
+    <string name="incorrect_toast">incorrect</string>
+    <string name="nextbutton">next</string>
+    <string name="backbutton">back</string>
+    <string name="cheatButton">cheat</string>
+    <string name="showanswer">answer</string>
+    <string name="warning">are you sure you want cheat</string>
+    <string name="jujmantetoast">you are cheater</string>
+
+
+</resources>

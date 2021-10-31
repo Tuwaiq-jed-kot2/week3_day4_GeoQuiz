@@ -3,20 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/question_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/first_question" />
+
+    <TextView
+        android:id="@+id/instructorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/question_text"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        tools:text="instrutorName" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,17 +31,60 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/true_button" />
-
-        <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:contentDescription="@string/false_button"
+            android:text="@string/false_button"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/true_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:shadowColor="#FF9800"
+            android:text="@string/true_button"
+            android:textColor="#03A9F4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextbutton" />
+
+        <Button
+            android:id="@+id/back_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backbutton" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cheat_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/cheatButton" />
+
 </LinearLayout>
