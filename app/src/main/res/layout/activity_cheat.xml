@@ -15,7 +15,13 @@
         android:gravity="center"
         android:text="@string/weaning_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <TextView
 
+        android:id="@+id/question_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:textSize="30sp" />
     <TextView
         android:id="@+id/answer_tv"
         android:layout_width="match_parent"

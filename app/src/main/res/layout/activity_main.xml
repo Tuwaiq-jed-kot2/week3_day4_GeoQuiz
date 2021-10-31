@@ -92,13 +92,7 @@
         app:backgroundTint="#A15670"
         app:iconPadding="10dp" />
 
-    <TextView
 
-        android:id="@+id/question_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:textSize="30sp" />
 
 
 </LinearLayout>
