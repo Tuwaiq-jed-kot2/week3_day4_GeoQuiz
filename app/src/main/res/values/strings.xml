@@ -1,11 +1,26 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">GeoQuiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
+    <string name="first_question">The capital of KSA is Hail?</string>
+    <string name="second_question">KSA is in Africa?</string>
+    <string name="third_question">Can you speak English?</string>
+    <string name="fourth_question">Do you learn Kotlin?</string>
+    <string name="fifth_question">Is Jeddah a cold city?</string>
+    <string name="sixth_question">Do you live in Saudi Arabia?</string>
+    <string name="cheat_masseg">Are you sure you want to do this?!</string>
+
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="nextButton">Next</string>
+    <string name="back_button">previous</string>
+    <string name="cheat_button">Cheat</string>
+    <string name="show_answer">Show Answer</string>
+
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_tost">Incorrect</string>
+    <string name="show_name_tost" tools:keep="@string/show_name_tost">Naif</string>
+    <string name="cheatM">You are cheater!</string>
 
 
 </resources>
