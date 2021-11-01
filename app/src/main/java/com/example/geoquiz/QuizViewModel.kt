@@ -21,7 +21,7 @@ class QuizViewModel: ViewModel() {
         get() = questionBank[currevtIndex].textResId
 
     var currevtIndex = 0
-    var isCheater = true
+    var isCheater = false
 
 
     fun nextQ() {
@@ -30,8 +30,8 @@ class QuizViewModel: ViewModel() {
     }
 
     fun backQ() {
-        currevtIndex = if (currevtIndex > questionBank.size)
-            currevtIndex - 1 else currevtIndex
+        currevtIndex = (currevtIndex -1 )% questionBank.size
+
     }
 
 }

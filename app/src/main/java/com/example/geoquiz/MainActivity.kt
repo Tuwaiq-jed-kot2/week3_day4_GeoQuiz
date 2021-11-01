@@ -25,9 +25,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var questinTextView: TextView
     private lateinit var cheatButton: Button
 
-
-    private var currevtIndex = 0
-
     val TAG = "main_Activty"
     private val quizViewModelv by lazy { ViewModelProvider(this).get(QuizViewModel::class.java) }
 
@@ -36,27 +33,28 @@ class MainActivity : AppCompatActivity() {
         if (resultCode != RESULT_OK) {
             return
         }
-        if (resultCode == requestCodeCheat) {
+        if (requestCode == requestCodeCheat) {
         quizViewModelv.isCheater =
         data?.getBooleanExtra(extrx_cheater, false) ?: false
         }
     }
 
     @SuppressLint("CutPasteId")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d(TAG, "onCreate()")
 
-        val currentIdex = savedInstanceState?.getInt(KEY_INDEX) ?: 0
-        quizViewModelv.currevtIndex = currevtIndex
+
 
         init2()
 
         cheatButton.setOnClickListener {
             val Intant = Intent(this, cheat_activity::class.java)
             Intant.putExtra(ExtraAnsweerOrNOT, quizViewModelv.currentQuestionAnswer)
-            startActivity(Intant)
+//            startActivity(Intant)
             startActivityForResult(Intant, requestCodeCheat)
         }
 
@@ -87,14 +85,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init2() {
-        questinTextView = findViewById(R.id.next_question)
-        questinTextView = findViewById(R.id.back_quetion)
+       // questinTextView = findViewById(R.id.next_question)
+       // questinTextView = findViewById(R.id.back_quetion)
         trueButton = findViewById(R.id.true_Botton)
         falseButton = findViewById(R.id.false_Button)
         nextButton = findViewById(R.id.next_question)
         questinTextView = findViewById(R.id.question_textVeiw)
         backButton = findViewById(R.id.back_quetion)
-        questinTextView = findViewById(R.id.question_textVeiw)
+        //questinTextView = findViewById(R.id.question_textVeiw)
         cheatButton = findViewById(R.id.cheat_button)
     }
 

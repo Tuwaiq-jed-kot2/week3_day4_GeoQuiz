@@ -13,7 +13,7 @@ const val ExtraAnsweerOrNOT="answeraaa"
 class cheat_activity : AppCompatActivity() {
     private lateinit var answer:TextView
     private lateinit var showA:Button
-    private lateinit var cheatButton: Button
+    //private lateinit var cheatButton: Button
 
     var answerIsTOrF= false
     var Equestonn=0
@@ -21,7 +21,9 @@ class cheat_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cheat)
-        init1()
+        answer = findViewById(R.id.answerTextView)
+        showA = findViewById(R.id.showAnswer)
+       // cheatButton = findViewById(R.id.cheat_button)
 
         Equestonn=intent.getIntExtra(Qtocheat,0)
 
@@ -34,19 +36,17 @@ class cheat_activity : AppCompatActivity() {
 
     }
 
-    private fun init1() {
-        answer = findViewById(R.id.answerTextView)
-        showA = findViewById(R.id.showAnswer)
-        cheatButton = findViewById(R.id.cheat_button)
 
-    }
+
+
+
 
     fun setAnswerShowResult(){
 
         val data=Intent().apply {
             putExtra(extrx_cheater,true)
         }
-        setResult(Activity.RESULT_OK)
+        setResult(Activity.RESULT_OK,data)
 
     }
 
