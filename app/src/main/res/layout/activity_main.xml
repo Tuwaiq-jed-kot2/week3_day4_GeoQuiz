@@ -1,114 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cardview_dark_background"
     android:backgroundTint="#E6D2EA"
     android:gravity="center"
-    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textViewQ"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="45dp"
         android:fontFamily="casual"
+        android:text="@string/q_1"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
         android:typeface="normal"
-        android:text="@string/q_1"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/falseB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+
+    <Button
+        android:id="@+id/trueB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="154dp"
+        android:backgroundTint="#90B38383"
+        android:fontFamily="casual"
+        android:paddingRight="6dp"
+        android:text="@string/true_button"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextB"
+        app:layout_constraintEnd_toEndOf="@+id/falseB"
+        app:layout_constraintStart_toStartOf="@+id/falseB"
+        app:layout_constraintTop_toBottomOf="@+id/falseB" />
+
+    <Button
+        android:id="@+id/falseB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:orientation="horizontal">
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#B28A89"
+        android:fontFamily="casual"
+        android:text="@string/false_button"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/trueB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQ" />
 
-        <Button
-            android:id="@+id/trueB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="80dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#90B38383"
-            android:fontFamily="casual"
-            android:paddingRight="6dp"
-            android:text="@string/true_button"
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/falseB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:backgroundTint="#B28A89"
-            android:fontFamily="casual"
-            android:text="@string/false_button"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <Button
+        android:id="@+id/cheatBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="#BE52D8"
+        android:text="@string/cheat_btn"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextB" />
 
-        <Button
-            android:id="@+id/cheatBTN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#BE52D8"
-            android:text="@string/cheat_btn"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/prevB"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:gravity="center">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="#A9A9A9"
+        android:fontFamily="casual"
+        android:text="@string/prev_button"
+        android:textColor="#F30909"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_media_previous"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nextB"
+        app:layout_constraintEnd_toStartOf="@+id/nextB"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/prevB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="80dp"
-            android:backgroundTint="#A9A9A9"
-            android:fontFamily="casual"
-            android:text="@string/prev_button"
-            android:textColor="#F30909"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:icon="@android:drawable/ic_media_previous" />
+    <Button
+        android:id="@+id/nextB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#A9A9A9"
+        android:fontFamily="casual"
+        android:text="@string/next_button"
+        android:textAlignment="center"
+        android:textColor="#FF0707"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_media_next"
+        app:layout_constraintBottom_toTopOf="@+id/cheatBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prevB"
+        app:layout_constraintTop_toBottomOf="@+id/trueB" />
 
-        <Button
-            android:id="@+id/nextB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="#A9A9A9"
-            android:fontFamily="casual"
-            android:text="@string/next_button"
-            android:textAlignment="center"
-            android:textColor="#FF0707"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:icon="@android:drawable/ic_media_next" />
-    </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
